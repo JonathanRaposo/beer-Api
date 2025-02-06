@@ -1,0 +1,24 @@
+<div id="beers-container">
+
+    {{#each beers}}
+     <div id="beer-wrapper">
+           <img src="{{image_url}}" alt="{{name}}"/>
+         <h4 class="name-heading">
+            <a href="/beers/{{_id}}">
+               {{name}}
+            </a>
+            
+         </h4>
+         <p class="tagline-para">{{tagline}}</p>
+         <p class="description-para">{{description}}</p>
+
+     </div>
+   {{!-- {{> beerCard this}} --}}
+
+    {{/each}}
+
+
+</div>
+
+
+{{!--  image, name, description, and tagline of the beer. --}}
