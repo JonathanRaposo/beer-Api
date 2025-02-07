@@ -1,2 +1,4 @@
 
 this is a express application using the beer api. I created a ApiService class that will handle all the http request to the beer api . 
+
+![Alt text](statc_files/images/beer.png)
