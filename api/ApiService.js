@@ -12,7 +12,7 @@ class ApiService {
                 }
                 return response.json();
             })
-            .catch((err) => `Unable to get all the beers from api.${err}`)
+            .catch((err) => `Unable to get all the beers from api.${err}`);
     }
 
     getBeer(id) {
@@ -23,7 +23,7 @@ class ApiService {
                 }
                 return response.json()
             })
-            .catch((err) => `Unable to get specific bear from api.${err}`,);
+            .catch((err) => `Unable to get specific bear from api.${err}`);
     }
 
     getRandomBeer() {
@@ -34,7 +34,18 @@ class ApiService {
                 }
                 return response.json()
             })
-            .catch((err) => `Unable to get specific bear from api.${err}`,);
+            .catch((err) => `Unable to get specific bear from api.${err}`);
+    }
+
+    searchQuery(query) {
+        return fetch(`${this.baseURL}/search?q=${query}`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`${response.status} - ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .catch((err) => `Unable to search params.${err}`);
     }
 }
 module.exports = ApiService;

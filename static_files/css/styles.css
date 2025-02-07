@@ -97,7 +97,7 @@ nav ul li a{
     /* margin-top: 100px auto; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 
