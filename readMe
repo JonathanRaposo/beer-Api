@@ -1,3 +1,3 @@
 
-this is a express application using the beer api. I created a ApiService class that will handle all the http request to the beer api . 
+this is na express web app that uses an external api (beer api). I created a ApiService class that will handle all the http request to the beer api . 
 
